@@ -1,0 +1,15 @@
+.mainContainer {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;  /* Distributes the items evenly */
+    align-items: center; 
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.buttonContainer {
+    border: solid;
+    border-color: black;
+    border-radius: 5px;
+
+}
