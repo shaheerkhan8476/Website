@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import HomeScreen from './screens/HomeScreen.tsx';
+import HomeScreen from './screens/HomeScreen.js';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {

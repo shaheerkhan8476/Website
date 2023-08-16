@@ -3,9 +3,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 function NavigationBar() {
     return (
+        <>
+        <div></div>
         <div className={styles.mainContainer}>
             <div className={styles.buttonContainer}>
-                <Link to='/'>About Me</Link>
+                <Link to='/'>
+                    <div className={styles.buttonText}>
+                    About Me
+                        </div></Link>
             </div>
             <div className={styles.buttonContainer}>
             <Link to='/experiences'>Experiences</Link>
@@ -17,6 +22,8 @@ function NavigationBar() {
             <Link to='/Hobbies'>Hobbies</Link>
             </div>
         </div>
+        <div></div>
+        </>
     );
 };
 
