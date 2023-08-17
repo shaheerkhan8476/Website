@@ -16,7 +16,6 @@ function HomeScreen() {
       <div className={styles.main}>
       <video
           autoPlay
-          loop
           muted
           className={styles.backgroundVideo}
           playsInline
@@ -24,7 +23,6 @@ function HomeScreen() {
         >
           <source src={yourName} type="video/mp4" />
         </video>
-        <NavigationBar />
         <div className={styles.homeContainer}>
           <div className={styles.textContainer}>
             <div className={styles.header}>Shaheer Khan</div>
