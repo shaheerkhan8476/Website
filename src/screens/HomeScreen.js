@@ -7,25 +7,29 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faFile } from "@fortawesome/free-regular-svg-icons";
 import { Link } from "react-router-dom";
 import resume from "./Resume.pdf";
+import firstPic from "./firstPic.png"
+
+
 function HomeScreen() {
   return (
     <>
       <div className={styles.main}>
-        <video
+      <video
           autoPlay
           loop
           muted
           className={styles.backgroundVideo}
           playsInline
+          poster = {firstPic}
         >
           <source src={yourName} type="video/mp4" />
         </video>
         <NavigationBar />
-        <div className={styles.mainContainer}>
+        <div className={styles.homeContainer}>
           <div className={styles.textContainer}>
             <div className={styles.header}>Shaheer Khan</div>
             <div className={styles.content}>
-              Computer Science Student at Michigan State University
+              Software Engineer
             </div>
             <div className={styles.logoSection}>
               <Link to="https://www.linkedin.com/in/shaheerkhan8476/">
@@ -66,6 +70,9 @@ function HomeScreen() {
               </a>
             </div>
           </div>
+        </div>
+        <div>
+          Hello
         </div>
       </div>
     </>
