@@ -1,49 +1,73 @@
 import React from "react";
-import styles from './HomeScreen.module.css'
+import styles from "./HomeScreen.module.css";
 import NavigationBar from "../components/NavigationBar";
 import yourName from "./yourName.mp4";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faFile } from "@fortawesome/free-regular-svg-icons";
+import { Link } from "react-router-dom";
+import resume from "./Resume.pdf";
 function HomeScreen() {
   return (
     <>
-     <div className={styles.main}>
-        <video 
-            autoPlay 
-            loop 
-            muted 
-            className={styles.backgroundVideo}
-            playsInline 
-            >
+      <div className={styles.main}>
+        <video
+          autoPlay
+          loop
+          muted
+          className={styles.backgroundVideo}
+          playsInline
+        >
           <source src={yourName} type="video/mp4" />
         </video>
-    <NavigationBar />
-      <div className={styles.mainContainer}>
-        <div className={styles.textContainer}>
-            <div className={styles.header}>
-            Shaheer Khan
-            </div>
+        <NavigationBar />
+        <div className={styles.mainContainer}>
+          <div className={styles.textContainer}>
+            <div className={styles.header}>Shaheer Khan</div>
             <div className={styles.content}>
-            Computer Science Student | Full-Stack Developer | Junior at Michigan State University 
+              Computer Science Student at Michigan State University
             </div>
-            <div className={styles.links}>
-              <div className={styles.logo}>
-                
-              </div>
-              <div className={styles.logo}>
-                
-              </div>
-              <div className={styles.logo}>
-                
-              </div>
-              <div className={styles.logo}>
-                
-              </div>
-              <div>
-                
-              </div>
+            <div className={styles.logoSection}>
+              <Link to="https://www.linkedin.com/in/shaheerkhan8476/">
+                <div className={styles.logo}>
+                  <FontAwesomeIcon
+                    className={styles.linkedIn}
+                    icon={faLinkedin}
+                    bounce
+                  />
+                </div>
+              </Link>
+              <Link to="https://github.com/shaheerkhan8476">
+                <div className={styles.logo}>
+                  <FontAwesomeIcon
+                    className={styles.gitHub}
+                    icon={faGithub}
+                    bounce
+                  />
+                </div>
+              </Link>
+              <a href="mailto: shaheerkhan8476@gmail.com">
+                <div className={styles.logo}>
+                  <FontAwesomeIcon
+                    className={styles.email}
+                    icon={faEnvelope}
+                    bounce
+                  />
+                </div>
+              </a>
+              <a href={resume} target="_blank" rel="noopener noreferrer">
+                <div className={styles.logo}>
+                  <FontAwesomeIcon
+                    className={styles.file}
+                    icon={faFile}
+                    bounce
+                  />
+                </div>
+              </a>
             </div>
+          </div>
         </div>
       </div>
-    </div>
     </>
   );
 }
