@@ -71,9 +71,6 @@ function HomeScreen() {
             </div>
           </div>
         </div>
-        <div>
-          Hello
-        </div>
       </div>
     </>
   );
