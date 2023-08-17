@@ -1,9 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Varela+Round&display=swap');
 .main {
   width: 100%;
   height: 100%;
-  background: #606c88;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 
 }
 .navBar {
@@ -28,5 +27,37 @@ background: linear-gradient(to right, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, F
 }
 .header {
   font-size: 60px;
+  color:white;
+  height: 12%;
+  transition: 0.5s;
+  margin: 0;
+  font-family: 'DynaPuff', cursive;
+  font-family: 'Varela Round', sans-serif;
+}
+.content {
+  font-size: 30px;
+  color: white;
+  height: 12%;
+  
+}
+
+.header:hover {
+  color: transparent;
+  -webkit-text-stroke: 2px white;
 
 }
+
+.links {
+  display: flex;
+
+}
+.backgroundVideo {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; 
+}
+
