@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=DynaPuff&family=Kalam&family=Varela+Round&display=swap');
 .main {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
-.navBar {
-  display: flex;
-  width: 90%;
-  justify-content: center; 
-}
+
 .homeContainer {
 
   display: flex;
@@ -64,8 +61,8 @@
 }
   
 .linkedIn:hover {
-    color: #005582; /* Darker shade of LinkedIn blue for hover */
-    transform: scale(1.1); /* Optional: slightly enlarge the icon on hover */
+    color: #005582; 
+    transform: scale(1.1); 
 }
 .logoSection {
   display: flex;
@@ -80,8 +77,8 @@
 }
 
 .gitHub:hover {
-  color: #000000; /* Darker shade of LinkedIn blue for hover */
-    transform: scale(1.1); /* Optional: slightly enlarge the icon on hover */
+  color: #000000; 
+    transform: scale(1.1); 
 }
 
 .email {
@@ -92,8 +89,8 @@
 }
 
 .email:hover {
-  color: #00bfff; /* Darker shade of LinkedIn blue for hover */
-    transform: scale(1.1); /* Optional: slightly enlarge the icon on hover */
+  color: #00bfff; 
+    transform: scale(1.1); 
 }
 
 .file {
@@ -104,6 +101,49 @@
 }
 
 .file:hover {
-  color: #5a6366; /* Darker shade of LinkedIn blue for hover */
-    transform: scale(1.1); /* Optional: slightly enlarge the icon on hover */
+  color: #5a6366; 
+    transform: scale(1.1); 
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.aboutScreen {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #141e30, #243b55);
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutMeContainer {
+  display: flex;
+  height: 90%;
+}
+
+
+.statement {
+  color: white;
+  font-size: 80px;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  width: 100%;
+  height: 10%;
+}
+
+.imageContainer {
+  width: 50%;
+  border: solid;
+  border-color: red;
+}
+
+.aboutMeContent {
+  width: 50%;
+  border: solid;
+  border-color: red;
+}
+.aboutTextContainer {
+  display: flex;
+  flex-direction: column;
 }

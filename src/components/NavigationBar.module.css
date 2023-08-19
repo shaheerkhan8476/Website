@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Kalam&family=Varela+Round&display=swap');
 body {
     display: flex;
     justify-content: center;
@@ -5,24 +6,33 @@ body {
     height: 100vh;  
 }
 
-.mainContainer {
-    max-width: 80%;  
+.mainContainer { 
     display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    margin: 0 auto;
-}
-
-.buttonContainer a {
-    text-decoration: none;
-    color: #EFD3D7;
-    font-size: 20px;
-    font-weight: bold;
+    justify-content: flex-end; 
+    align-items: stretch;
     
 }
 
-.buttonContainer:hover a {
-    color: #c8b6ff;
-
+.buttonContainer a  {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 10%;
+    font-family: 'DynaPuff', cursive;
+    font-family: 'Kalam', cursive;
+    font-family: 'Varela Round', sans-serif;
 }
 
+.buttonContainer:hover a {
+    color: transparent;
+  -webkit-text-stroke: 0.5px rgb(185, 154, 253);
+  transition: 0.5s;
+  transform: scale(3); 
+  font-size: 30px;
+  
+}
+
+.buttonContainer {
+    margin: 0 10px; 
+}
