@@ -26,9 +26,6 @@ function HomeScreen() {
         <div className={styles.homeContainer}>
           <div className={styles.textContainer}>
             <div className={styles.header}>Shaheer Khan</div>
-            <div className={styles.content}>
-              Software Engineer
-            </div>
             <div className={styles.logoSection}>
               <Link to="https://www.linkedin.com/in/shaheerkhan8476/">
                 <div className={styles.logo}>

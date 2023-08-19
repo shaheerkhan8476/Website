@@ -107,3 +107,14 @@
   color: #5a6366; /* Darker shade of LinkedIn blue for hover */
     transform: scale(1.1); /* Optional: slightly enlarge the icon on hover */
 }
+
+@media only screen and (max-width: 600px) {
+  .header {
+    font-size: 5vh;
+    color:white;
+    height: 12%;
+    transition: 0.5s;
+    font-family: 'DynaPuff';
+    font-family: 'Varela Round', sans-serif;
+  }
+}
