@@ -3,6 +3,7 @@
 .main {
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 
 .homeContainer {
@@ -22,7 +23,7 @@
 
 }
 .header {
-  font-size: 6vh;
+  font-size: 9vh;
   color:white;
   height: 12%;
   transition: 0.5s;
@@ -78,7 +79,7 @@
 
 .gitHub:hover {
   color: #000000; 
-    transform: scale(1.1); 
+  transform: scale(1.1); 
 }
 
 .email {
@@ -90,7 +91,7 @@
 
 .email:hover {
   color: #00bfff; 
-    transform: scale(1.1); 
+  transform: scale(1.1); 
 }
 
 .file {
