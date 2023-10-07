@@ -10,7 +10,7 @@ import resume from "./Resume.pdf";
 import firstPic from "./firstPic.png";
 function HomeScreen() {
   return (
-    <>
+    
       <div className={styles.main}>
         <video
           autoPlay
@@ -68,7 +68,7 @@ function HomeScreen() {
         </div>
        
       </div>
-    </>
+    
   );
 }
 

@@ -6,7 +6,7 @@ import imagine from "./imagine.png";
 import tyler from "./tyler.png";
 function ExperienceScreen() {
   return (
-    <>
+    <div>
       <NavigationBar />
       <div className={styles.timeline}>
         <div className={styles.cardRow}>
@@ -43,7 +43,7 @@ function ExperienceScreen() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
