@@ -8,7 +8,6 @@ import { faEnvelope, faFile } from "@fortawesome/free-regular-svg-icons";
 import { Link } from "react-router-dom";
 import resume from "./Resume.pdf";
 import firstPic from "./firstPic.png";
-
 function HomeScreen() {
   return (
     <>
@@ -67,17 +66,7 @@ function HomeScreen() {
             </div>
           </div>
         </div>
-        <div className={styles.aboutScreen}>
-          <div className={styles.statement}>Hi, I'm Shaheer</div>
-          <div className={styles.aboutMeContainer}>
-            <div className={styles.imageContainer}>Hello</div>
-            <div className={styles.aboutMeContent}>
-              <div className={styles.aboutTextContainer}>
-
-              </div>
-            </div>
-          </div>
-        </div>
+       
       </div>
     </>
   );

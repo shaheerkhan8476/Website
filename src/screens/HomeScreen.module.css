@@ -112,38 +112,8 @@ body {
 .aboutScreen {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to right, #141e30, #243b55);
   display: flex;
   flex-direction: column;
 }
 
-.aboutMeContainer {
-  display: flex;
-  height: 90%;
-}
 
-
-.statement {
-  color: white;
-  font-size: 80px;
-  font-family: 'Dancing Script', cursive;
-  font-weight: bold;
-  width: 100%;
-  height: 10%;
-}
-
-.imageContainer {
-  width: 50%;
-  border: solid;
-  border-color: red;
-}
-
-.aboutMeContent {
-  width: 50%;
-  border: solid;
-  border-color: red;
-}
-.aboutTextContainer {
-  display: flex;
-  flex-direction: column;
-}

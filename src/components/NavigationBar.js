@@ -9,18 +9,14 @@ function NavigationBar() {
       <div className={styles.mainContainer}>
         <div className={styles.buttonContainer}>
           <Link to="/">
-            <div className={styles.buttonText}>About Me</div>
+            <div className={styles.buttonText}>Home</div>
           </Link>
         </div>
         <div className={styles.buttonContainer}>
           <Link to="/experiences">Experiences</Link>
         </div>
-        <div className={styles.buttonContainer}>
-          <Link to="/Projects">Projects</Link>
-        </div>
-        <div className={styles.buttonContainer}>
-          <Link to="/Hobbies">Hobbies</Link>
-        </div>
+        
+        
       </div>
      
     </>
