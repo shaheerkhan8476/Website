@@ -1,5 +1,6 @@
 body {
     background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    
 }
 
 .timeline {
@@ -9,14 +10,15 @@ body {
     height: 100%;
     width: 100%;
     align-items: center;  
+    
 }
 
 .cardRow {
     display: flex;
     flex-direction: row;
     width: 80%;
-    height: 25%;
     margin-bottom: 2%;   
+    
 }
 
 .card {
@@ -26,7 +28,8 @@ body {
     display: flex;
     justify-content: center;  
     align-items: center;
-    margin-right: 2%;         
+    margin-right: 2%;        
+     
 }
 
 .circleCard {
@@ -34,7 +37,8 @@ body {
     height: 100px;
     border-radius: 50%;  
     overflow: hidden;
-    position: relative;
+    
+    
 }
 
 .descriptionCard {
@@ -43,9 +47,80 @@ body {
     display: flex;
     flex-direction: column; 
 }
+
+.descriptionCard:hover {
+    border-color: green;
+}
 .circleCardImage {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 50%;  /* to ensure the image remains circular */
+    object-fit:cover;
+    border-radius: 50%; 
+}
+
+.overlay {
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px; 
+    
+}
+  .cardTitle {
+    font-weight: normal;  
+    font-size: 20px;      
+    text-align: center;   
+    margin-bottom: 20px;  
+    white-space: pre-line;
+}
+
+  .cardButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;       
+    justify-content: center;  
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+}
+.cardButton:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+.date {
+    font-weight: bold;
+}
+.cardFormat {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50%;
+    width: 75%;
+    
+}
+.root {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+.centerCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
