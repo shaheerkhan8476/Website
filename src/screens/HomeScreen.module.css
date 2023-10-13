@@ -117,4 +117,14 @@ body {
   flex-direction: column;
 }
 
+@media only screen and (max-width: 720px) {
+  .header {
+    font-size: 8vh;
+    color:white;
+    height: 12%;
+    transition: 0.5s;
+    font-family: 'DynaPuff';
+    font-family: 'Varela Round', sans-serif;
+  }
+}
 
